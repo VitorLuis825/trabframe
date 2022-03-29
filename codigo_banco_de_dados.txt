@@ -1,0 +1,13 @@
+create database portal_noticias;
+
+use portal_noticias;
+
+create table noticias(
+	id_noticia integer not null primary key auto_increment,
+    titulo_noticia varchar(100),
+    noticia text,
+    data_noticia timestamp default current_timestamp);
+    
+insert into noticias (titulo_noticia,noticia) values ('titulo da noticia pica das galaxias','a pica das galaxias tem muitos ânus-luz de comprimento');
+
+select * from noticias
